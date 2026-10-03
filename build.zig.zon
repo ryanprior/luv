@@ -1,0 +1,21 @@
+.{
+    .name = .luv,
+    .version = "1.53.0",
+    .fingerprint = 0x55a2b2ec2cb44ee9, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .lua = .{
+            .url = "git+https://github.com/PegaFox/allyourcodebase-lua.git#9d12e6d06f80d90d5cb478b79fe086b9b1df042f",
+            .hash = "lua-5.4.7-zqrcysUiAACQA04jcT5JHRCbEGsI24cGqRbM_LPwDXWn",
+        },
+        .libuv = .{
+            .url = "git+https://github.com/allyourcodebase/libuv.git#6d005e70366e5b1c655cba12a9547139bd0a1060",
+            .hash = "libuv-1.53.0-htqqv8VsAABjzkxQ4LyqPM8zaWEWkxD9L-4tUPRPW8V9",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
